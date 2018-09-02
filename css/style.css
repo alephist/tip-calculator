@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("../img/table.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #42171d;
+}
+
+.tip-calc {
+  width: 25rem;
+  margin: 9.375rem auto;
+  text-align: center;
+  padding: 1.5625rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fcf5f6;
+}
+
+.tip-calc__title {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tip-calc__input-group {
+  padding: 0.75rem;
+}
+
+.tip-calc__input {
+  display: block;
+  margin-top: 0.625rem;
+}
+
+.tip-calc__input>input {
+  padding: 0.3125rem 0.625rem;
+}
+
+.tip-calc__bill-amt {
+  width: 5.625rem;
+}
+
+.tip-calc__num-person {
+  width: 4.375rem;
+}
+
+.tip-calc__quality {
+  padding: 0.75rem;
+}
+
+.tip-calc__tip-percent {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ba1f36;
+  background-color: white;
+  color: #ba1f36;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.tip-calc__tip-percent:focus,
+.tip-calc__tip-percent:active {
+  outline-style: none;
+  color: white;
+  background-color: #ba1f36;
+}
+
+.tip-calc__output {
+  padding: 0.75rem;
+}
+
+.tip-calc__prompt {
+  font-weight: bold;
+}
+
+.tip-calc__prompt--disabled {
+  display: none;
+}
+
+.tip-calc__tip-amt,
+.tip-calc__total {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.tip-calc__tip-amt--abled,
+.tip-calc__total--abled {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

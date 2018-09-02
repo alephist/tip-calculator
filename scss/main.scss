@@ -1,0 +1,99 @@
+// Color Variables
+$cocoa-bean: #42171d;
+$cardinal: #ba1f36;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url('../img/table.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $cocoa-bean;
+}
+
+.tip-calc {
+  width: 25rem;
+  margin: 9.375rem auto;
+  text-align: center;
+  padding: 1.5625rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lighten($cocoa-bean, 80%);
+
+  &__title {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__input-group {
+    padding: 0.75rem;
+  }
+
+  &__input {
+    display: block;
+    margin-top: 0.625rem;
+
+    & > input {
+      padding: 0.3125rem 0.625rem;
+    }
+  }
+
+  &__bill-amt {
+    width: 5.625rem;
+  }
+
+  &__num-person {
+    width: 4.375rem;
+  }
+
+  &__quality {
+    padding: 0.75rem;
+  }
+
+  &__tip-percent {
+    padding: 0.75rem 1rem;
+    border: 1px solid $cardinal;
+    background-color: white;
+    color: $cardinal;
+    font-weight: 600;
+    border-radius: 5px;
+
+    &:focus,
+    &:active {
+      outline-style: none;
+      color: white;
+      background-color: $cardinal;
+    }
+  }
+
+  &__output {
+    padding: 0.75rem;
+  }
+
+  &__prompt {
+    font-weight: bold;
+
+    &--disabled {
+      display: none;
+    }
+  }
+
+  &__tip-amt,
+  &__total {
+    font-size: 1.5rem;
+    display: none;
+
+    &--abled {
+      display: block;
+    }
+  }
+}
